@@ -1,0 +1,6 @@
+% nix
+
+# Update flake input
+nix flake lock --update-input <input>
+
+$ input: nix flake info --json | jq -r '.locks.nodes | keys | .[]'
