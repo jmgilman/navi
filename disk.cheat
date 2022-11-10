@@ -1,0 +1,4 @@
+% disk
+
+# Disk space overview
+df -hT

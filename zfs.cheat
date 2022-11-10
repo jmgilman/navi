@@ -1,0 +1,12 @@
+% zfs, disk
+
+# List ZFS pools
+zpool list
+
+# List ZFS snapshots
+zfs list -t snapshot
+
+# Mount ZFS snapshot
+mount -t zfs <snapshot> <path>
+
+$ snapshot: zfs list -t snapshot -o name | tail -n+2
